@@ -135,6 +135,6 @@ mahsan@ctrl:/CKS/NetWorkPolicy$
 
 <b> Unable to access pods due to new NetworkPolicy </b>
 
-
+<h1> Create egress and ingress rules </h1>
 </pre>
 
