@@ -56,7 +56,7 @@ mahsan@ctrl:$ k exec pod-1 -- curl pod-2
 <!DOCTYPE html>
 <html>
 <head>
-<title>Welcome to nginx!</title>
+Welcome to nginx!
 <style>
 html { color-scheme: light dark; }
 body { width: 35em; margin: 0 auto;
@@ -64,7 +64,7 @@ font-family: Tahoma, Verdana, Arial, sans-serif; }
 </style>
 </head>
 <body>
-<h1>Welcome to nginx!</h1>
+Welcome to nginx!
 <p>If you see this page, the nginx web server is successfully installed and
 working. Further configuration is required.</p>
 
@@ -95,7 +95,7 @@ font-family: Tahoma, Verdana, Arial, sans-serif; }
 </style>
 </head>
 <body>
-<h1>Welcome to nginx!</h1>
+Welcome to nginx!
 <p>If you see this page, the nginx web server is successfully installed and
 working. Further configuration is required.</p>
 
