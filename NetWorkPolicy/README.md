@@ -53,29 +53,11 @@ mahsan@ctrl:$ k exec pod-1 -- curl pod-2
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100   615  100   615    0     0  76875      0 --:--:-- --:--:-- --:--:-- 76875
-<!DOCTYPE html>
-<html>
-<head>
 Welcome to nginx!
-<style>
-html { color-scheme: light dark; }
-body { width: 35em; margin: 0 auto;
-font-family: Tahoma, Verdana, Arial, sans-serif; }
-</style>
-</head>
-<body>
 Welcome to nginx!
-<p>If you see this page, the nginx web server is successfully installed and
-working. Further configuration is required.</p>
+If you see this page, the nginx web server is successfully installed and
+working. Further configuration is required
 
-<p>For online documentation and support please refer to
-<a href="http://nginx.org/">nginx.org</a>.<br/>
-Commercial support is available at
-<a href="http://nginx.com/">nginx.com</a>.</p>
-
-<p><em>Thank you for using nginx.</em></p>
-</body>
-</html>
 
 
 <b> Acces to Pod-1  from pod-2</b>
@@ -84,29 +66,9 @@ mahsan@ctrl:$ k exec pod-2 -- curl pod-1
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100   615  100   615    0     0   100k      0 --:--:-- --:--:-- --:--:--  100k
-<!DOCTYPE html>
-<html>
-<head>
-<title>Welcome to nginx!</title>
-<style>
-html { color-scheme: light dark; }
-body { width: 35em; margin: 0 auto;
-font-family: Tahoma, Verdana, Arial, sans-serif; }
-</style>
-</head>
-<body>
+>Welcome to nginx!
 Welcome to nginx!
-<p>If you see this page, the nginx web server is successfully installed and
-working. Further configuration is required.</p>
 
-<p>For online documentation and support please refer to
-<a href="http://nginx.org/">nginx.org</a>.<br/>
-Commercial support is available at
-<a href="http://nginx.com/">nginx.com</a>.</p>
-
-<p><em>Thank you for using nginx.</em></p>
-</body>
-</html>
 mahsan@ctrl:$
 
 mahsan@ctrl:/CKS/NetWorkPolicy$ cat nwpolicy.yml
@@ -146,29 +108,8 @@ drwxrwxr-x 4 mahsan mahsan 4096 Feb 25 19:09 ../
 mahsan@ctrl:~/CKS/NetWorkPolicy$ k exec pod-2 -- curl pod-2
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-1<!DOCTYPE html>   0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
-<html>
-<head>
-<title>Welcome to nginx!</title>
-<style>
-html { color-scheme: light dark; }
-body { width: 35em; margin: 0 auto;
-font-family: Tahoma, Verdana, Arial, sans-serif; }
-</style>
-</head>
-<body>
-<h1>Welcome to nginx!</h1>
-<p>If you see this page, the nginx web server is successfully installed and
-working. Further configuration is required.</p>
-
-<p>For online documentation and support please refer to
-<a href="http://nginx.org/">nginx.org</a>.<br/>
-Commercial support is available at
-<a href="http://nginx.com/">nginx.com</a>.</p>
-
-<p><em>Thank you for using nginx.</em></p>
-</body>
-</html>
+Welcome to nginx!
+Welcome to nginx!
 00   615  100   615    0     0   150k      0 --:--:-- --:--:-- --:--:--  150k
 mahsan@ctrl:~/CKS/NetWorkPolicy$ k exec pod-1 -- curl pod-2
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
@@ -177,31 +118,10 @@ mahsan@ctrl:~/CKS/NetWorkPolicy$ k exec pod-2 -- curl pod-2-:-- --:--:--     0
 
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
-100 <!DOCTYPE html>0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
-<html>
-<head>
-<title>Welcome to nginx!</title>
-<style>
-html { color-scheme: light dark; }
-body { width: 35em; margin: 0 auto;
-font-family: Tahoma, Verdana, Arial, sans-serif; }
-</style>
-</head>
-<body>
 Welcome to nginx!
-<p>If you see this page, the nginx web server is successfully installed and
+Welcome to nginx!
 working. Further configuration is required.</p>
 
-<p>For online documentation and support please refer to
-<a href="http://nginx.org/">nginx.org</a>.<br/>
-Commercial support is available at
-<a href="http://nginx.com/">nginx.com</a>.</p>
-
-<p><em>Thank you for using nginx.</em></p>
-</body>
-</html>
-  615  100   615    0     0   150k      0 --:--:-- --:--:-- --:--:--  150k
-mahsan@ctrl:~/CKS/NetWorkPolicy$
 mahsan@ctrl:~/CKS/NetWorkPolicy$
 mahsan@ctrl:~/CKS/NetWorkPolicy$ k exec pod-2 -- curl pod-1
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
@@ -222,29 +142,7 @@ mahsan@ctrl:~/CKS/NetWorkPolicy$ k exec pod-2 -- curl 172.16.186.68
                                  Dload  Upload   Total   Spent    Left  Speed
   0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0
 mahsan@ctrl:~/CKS/NetWorkPolicy$ k exec pod-1 -- curl 172.16.186.69
-  % T<!DOCTYPE html>
-<html>
-<head>
-<title>Welcome to nginx!</title>
-<style>
-html { color-scheme: light dark; }
-body { width: 35em; margin: 0 auto;
-font-family: Tahoma, Verdana, Arial, sans-serif; }
-</style>
-</head>
-<body>
 Welcome to nginx!
-<p>If you see this page, the nginx web server is successfully installed and
-working. Further configuration is required.</p>
-
-<p>For online documentation and support please refer to
-<a href="http://nginx.org/">nginx.org</a>.<br/>
-Commercial support is available at
-<a href="http://nginx.com/">nginx.com</a>.</p>
-
-<p><em>Thank you for using nginx.</em></p>
-</body>
-</html>
 otal    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100   615  100   615    0     0   100k      0 --:--:-- --:--:-- --:--:--  100k
