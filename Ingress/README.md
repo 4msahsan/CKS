@@ -148,4 +148,4 @@ root@microk8s:~#
 
 </pre>
 
-
+![Alt text](https://github.com/4msahsan/DevOps/blob/main/Kubernetes/png/02.png "msahsan@hotmail.com")
