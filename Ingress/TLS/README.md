@@ -1,5 +1,5 @@
 <pre>
-<h1> Sedure an Ingress </h1>
+<h1> Secure an Ingress </h1>
 
 root@microk8s:~/CKS# curl https://192.168.0.75:32531/service2
 curl: (60) SSL certificate problem: self-signed certificate
